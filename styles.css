@@ -1,0 +1,58 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro header {
+    width: 100%;
+}
+.intro div {
+    width: 50%;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 220%;
+    margin: 10px 0 0 0;
+}
+header h2 {
+    color: #ddd;
+    margin: 0 0 10px 0;
+}
+
+.summary {
+    background-color: #222;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+.summary::after {
+    content: ""; /* Required for the pseudo-element to render */
+    display: block; /* Allows you to set a width and height */
+    width: 150px; /* Adjust to your image's width */
+    height: 100px; /* Adjust to your image's height */
+    background-image: url('images/css-html.webp');
+    background-size: cover; /* Ensures the image fills the area scale-proportionally */
+    background-repeat: no-repeat;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: lightcyan;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
